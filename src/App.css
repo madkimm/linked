@@ -47,3 +47,8 @@
   font-weight: bold;
   color: #333;
 }
+.highlight-text {
+  font-size: 24px; /* 글씨 크기 키움 */
+  font-weight: bold;
+  color: #222; /* 조금 더 진한 색상 */
+}
