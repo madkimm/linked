@@ -1,0 +1,112 @@
+/* ✅ 선택 화면 컨테이너 */
+.pet-container {
+  text-align: center;
+  padding: 20px;
+  background: #f5f7fa;
+  border-radius: 15px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* ✅ 수호/변신 버튼 스타일 수정 */
+.tab-buttons {
+  display: flex;
+  width: 100%; /* 부모 요소 전체 사용 */
+  margin-bottom: 20px;
+}
+
+.tab-buttons button {
+  flex: 1; /* 각 버튼이 50% 너비 차지 */
+  padding: 15px 0;
+  font-size: 1.2rem; /* 글자 크기 증가 */
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  border-radius: 8px;
+}
+
+.tab-buttons button:first-child {
+  margin-right: 5px;
+}
+
+.tab-buttons button.active {
+  background: linear-gradient(45deg, #ff416c, #ff4b2b); /* 그라디언트 적용 */
+  color: white;
+}
+
+.tab-buttons button:not(.active) {
+  background-color: #f1f1f1;
+  color: #333;
+}
+
+.tab-buttons button:hover {
+  background: linear-gradient(45deg, #ff4b2b, #ff416c); /* 호버 시 반전 */
+  color: white;
+}
+
+
+/* ✅ 환수 리스트 (가로 정렬) */
+.pet-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px;
+}
+
+/* ✅ 환수 개별 아이템 */
+.pet-item {
+  width: 100px;
+  padding: 10px;
+  background: white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+/* ✅ 선택된 아이템 효과 */
+.pet-item.selected {
+  border: 3px solid #ff4b2b;
+  transform: scale(1.1);
+}
+
+/* ✅ 환수 아이콘 */
+.pet-item img {
+  width: 70px;
+  height: 70px;
+  border-radius: 10px;
+  border: 2px solid #ddd;
+}
+
+/* ✅ 환수 이름 */
+.pet-item p {
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+/* ✅ 계산하기 버튼 스타일 */
+.calculate-btn {
+  width: 100%; /* 버튼이 전체 너비를 차지하도록 */
+  padding: 15px 0;
+  font-size: 1.4rem; /* 글자 크기 증가 */
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  background: linear-gradient(45deg, #ff416c, #ff4b2b); /* 그라디언트 적용 */
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  margin-top: 20px;
+}
+
+.calculate-btn:hover {
+  background: linear-gradient(45deg, #ff4b2b, #ff416c); /* 호버 시 반전 */
+  transform: scale(1.05); /* 살짝 확대 효과 */
+}
+

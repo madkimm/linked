@@ -1,23 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import PetSelector from "./components/PetSelector";
+import ResultScreen from "./components/ResultScreen";
 
 function App() {
+  const [selectedPets, setSelectedPets] = useState([]); // 선택된 환수 목록
+  const [showResult, setShowResult] = useState(false); // 결과 화면 전환 상태
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {!showResult ? (
+        <PetSelector setSelectedPets={setSelectedPets} setShowResult={setShowResult} />
+      ) : (
+        <ResultScreen selectedPets={selectedPets} setShowResult={setShowResult} />
+      )}
     </div>
   );
 }
