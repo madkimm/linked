@@ -21,6 +21,7 @@ const App = () => {
       <div className="update-info">
         <p><strong>업데이트 일자:</strong> {updateDate}</p>
         <p><strong>업데이트 내용:</strong> {updateMemo}</p>
+        <p><strong>환수 레벨 25 기준으로 최적의 조합을 찾아주는 프로그램입니다.</strong> </p>
       </div>
 
       {!showResult ? (
