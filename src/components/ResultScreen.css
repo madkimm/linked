@@ -100,3 +100,30 @@
 .immortal {
   color: gold; /* 불멸 (금색) */
 }
+
+/* ✅ 결과 테이블 스타일 */
+.stats-table {
+  width: 60%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+.stats-table th, .stats-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+.stats-table th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+.stats-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.stats-table td {
+  font-size: 16px;
+}
+
