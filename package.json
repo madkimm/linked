@@ -2,7 +2,7 @@
   "name": "linked",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://alxmfj.github.io/linked/",
+  "homepage": "https://madkimm.github.io/linked/",
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",
