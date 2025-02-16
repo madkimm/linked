@@ -21,7 +21,14 @@ const PetSelector = ({ setSelectedPets, setShowResult }) => {
       .catch((error) => console.error("데이터 로딩 오류:", error));
   }, []);
 
-  const filteredPets = pets.filter((pet) => pet.type === selectedTab);
+  const filteredPets = pets
+  .filter((pet) => pet.type === selectedTab)
+  .sort((a, b) => {
+    if (a.grade === "전설" && b.grade === "불멸") return -1;
+    if (a.grade === "불멸" && b.grade === "전설") return 1;
+    return 0; // 같은 등급이면 기존 정렬 유지
+  });
+
   const MAX_SELECTION = 30;
 
   const handleSelect = (pet) => {
