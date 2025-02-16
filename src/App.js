@@ -13,7 +13,7 @@ const App = () => {
     month: "long",
     day: "numeric"
   });
-  const updateMemo = "수호 2종 정령록, 불깨비 업데이트 예정";
+  const updateMemo = "2025년 1월 환수까지 업데이트 완료";
 
   return (
     <div className="app-container">
