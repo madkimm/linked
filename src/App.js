@@ -13,7 +13,7 @@ const App = () => {
     month: "long",
     day: "numeric"
   });
-  const updateMemo = "2025년 1월 환수까지 업데이트 완료";
+  const updateMemo = "2025년 3월 환수까지 업데이트 완료";
 
   return (
     <div className="app-container">
