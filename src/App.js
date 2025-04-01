@@ -22,6 +22,8 @@ const App = () => {
         <p><strong>업데이트 일자:</strong> {updateDate}</p>
         <p><strong>업데이트 내용:</strong> {updateMemo}</p>
         <p className="highlight-text"><strong>환수 레벨 25 기준으로 최적의 조합을 찾아줍니다.</strong> </p>
+        <p className="highlight-text"><strong>탑승 환수는 불멸>전설 순으로 많이 착용하는게 좋습니다.</strong> </p>
+        <p className="highlight-text"><strong>탑승 환수는 보스용으로 냉정 6 = 치위% 20% 최적.</strong> </p>
       </div>
 
       {!showResult ? (
