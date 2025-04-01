@@ -21,21 +21,9 @@ const App = () => {
       <div className="update-info">
         <p><strong>업데이트 일자:</strong> {updateDate}</p>
         <p><strong>업데이트 내용:</strong> {updateMemo}</p>
-  <p className="highlight-text">
-    <strong>환수 레벨 25 기준으로 최적의 조합을 찾아줍니다.</strong>
-  </p>
-
-  <p className="highlight-text">
-    <strong>
-      <span style={{ color: '#E91E63' }}>탑승 환수</span>는 불멸&gt;전설 순으로 많이 착용하는 것이 최적
-    </strong>
-  </p>
-
-  <p className="highlight-text">
-    <strong>
-      <span style={{ color: '#E91E63' }}>탑승 환수</span> 보스용 결속 냉정 6 = 치위 20% 최적
-    </strong>
-  </p>
+        <p className="highlight-text"><strong>환수 레벨 25 기준으로 최적의 조합을 찾아줍니다.</strong> </p>
+        <p className="highlight-text"><strong>탑승 환수는 불멸>전설 순으로 많이 착용하는것이 최적</strong> </p>
+        <p className="highlight-text"><strong>탑승 환수 보스용 결속 냉정 6 = 치위 20% 최적</strong> </p>
       </div>
 
       {!showResult ? (
